@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>popup</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style>
+    body {
+      font-family: 'Microsoft Yahei';
+      width: 500px;
+      min-height: 100px;
+      /* background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%); */
+      background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+      margin: 0;
+      padding: 0 24px 24px 24px;
+    }
+
+    .link_btn {
+      color: #3367d6;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      border: 2px solid #3367d6;
+      padding: 3px 5px;
+      border-radius: 4px;
+      margin-bottom: 5px;
+    }
+
+    .link_btn +.link_btn {
+      margin-left: 5px;
+    }
+
+    .btns {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .enter_back_btn {
+      color: #3367d6;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      border: 2px solid #3367d6;
+      padding: 2px 5px;
+      border-radius: 4px;
+      margin-top: 10px;
+      width: fit-content;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>日常常用功能</h1>
+  <div class="btns">
+    <div class="link_btn" id="max_current_window">窗口最大化</div>
+    <div class="link_btn" id="min_current_window">窗口最小化</div>
+    <div class="link_btn" id="full_current_window">窗口全屏</div>
+    <div class="link_btn" id="close_current_window">关闭所有标签(慎点)</div>
+  </div>
+  
+  <div class="enter_back_btn" id="open_background">进入后台</div>
+  <!-- <a href="#" id="invoke_background_js">调用background页JS方法</a> -->
+  <!-- <a href="#" id="open_new_window">新窗口打开百度</a> -->
+  <h2>云顶之弈</h2>
+  <div class="btns">
+    <div class="link_btn" id="open_url_new_tab_tft">查看外服数据</div>
+    <div class="link_btn" id="open_url_new_tab_yd">查看国服数据</div>
+  </div>
+  <h2>LSP工具</h2>
+  <div class="btns">
+    <div class="link_btn" id="open_url_new_tab_search_img">打开所有搜图网站</div>
+  </div>
+  <!-- <h2>popup与content-script交互</h2>
+  <div>
+    <a href="#" id="send_message_to_content_script">短连接发送消息到content-script</a>
+    <a href="#" id="connect_to_content_script">长连接发送消息到content-script</a>
+  </div>
+  <h2>DOM交互演示</h2>
+  <div>
+    <a href="#" id="update_bg_color">修改页面背景色(通过executeScript实现)</a>
+    <a href="#" id="update_font_size">修改字体大小(通过sendMessage实现)</a>
+  </div>
+  <h2>国际化演示</h2>
+  <div>
+    <p><span id="test_i18n"></span> (另外请到插件列表页查看描述的变化)</p>
+  </div>
+  <h2>其它</h2>
+  <div>
+    <a href="#" id="show_badge">显示badge</a>
+    <a href="#" id="hide_badge">隐藏badge</a>
+    <a href="#" id="show_notification">显示桌面通知</a>
+    <a href="#" id="check_media">检测网页视频</a>
+  </div>
+  <h2>更多</h2>
+  <div>
+    百度广告，右键菜单，omnibox，图片大小演示，devtools演示，sidebar演示，
+  </div> -->
+  <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+  <script type="text/javascript" src="js/popup.js"></script>
+</body>
+
+</html>
