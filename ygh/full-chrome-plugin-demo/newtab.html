@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>新标签页</title>
-	<meta charset="utf-8"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<style>
-	html,body{height: 100%;}
-	body{font-family: 'Microsoft Yahei';margin:0;padding:0;}
-	.center {
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    height: 100%;
-	    font-size: 48px;
-	    color: #CCC;
-	}
-	.wrapper {
-		position: absolute;
-		top: 0;
-		left: 0;
-		padding: 40px;
-		font-size: 16px;
-	}
-	</style>
+  <title>自定义新标签页</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;script-src * 'unsafe-inline'">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Microsoft Yahei';
+      margin: 0;
+      padding: 0;
+    }
+
+    #main {
+      position: relative;
+    }
+
+    .switch {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      font-size: 100px;
+      opacity: .2;
+      cursor: pointer;
+      user-select:none;
+    }
+
+    .link_btn {
+      color: #3367d6;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      border: 2px solid #3367d6;
+      padding: 3px 5px;
+      border-radius: 4px;
+      margin-bottom: 5px;
+    }
+
+    .link_btn +.link_btn {
+      margin-left: 5px;
+    }
+
+    .btns {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  </style>
 </head>
+
 <body>
-	<div class="center"><p>这是一个自定义的新标签页</p></div>
-	<div class="wrapper">
-		<a href="https://www.baidu.com">百度</a>
-		<a href="https://www.so.com">360搜索</a>
-	</div>
+  <div id="main">
+    <div class="switch">表</div>
+    <div class="out">
+      <div class="btns">
+        <div class="link_btn" id="open_url_new_tab_tft">查看外服数据</div>
+        <div class="link_btn" id="open_url_new_tab_yd">查看国服数据</div>
+      </div>
+    </div>
+    <div class="in">
+      <div class="btns">
+        <div class="link_btn" id="open_url_new_tab_search_img">打开所有搜图网站</div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="./js/vue.js"></script> -->
+  <script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
+  <script type="text/javascript" src="./js/newtab.js"></script>
+  <script type="text/javascript" src="./js/popup.js"></script>
 </body>
 </html>
