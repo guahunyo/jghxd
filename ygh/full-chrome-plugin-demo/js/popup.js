@@ -71,6 +71,61 @@ $('#open_url_new_tab_yd').click(() => {
 	chrome.tabs.create({ url: 'https://lol.qq.com/tft/#/rank/list' });
 });
 
+// 新标签打开大漠博客
+$('#open_url_new_tab_dm').click(() => {
+	chrome.tabs.create({ url: 'https://www.w3cplus.com/' });
+});
+
+// 新标签打开阮一峰博客
+$('#open_url_new_tab_ryf').click(() => {
+	chrome.tabs.create({ url: 'http://www.ruanyifeng.com/home.html' });
+});
+
+// 新标签打开张鑫旭博客
+$('#open_url_new_tab_zxx').click(() => {
+	chrome.tabs.create({ url: 'https://www.zhangxinxu.com/' });
+});
+
+// 新标签打开技术胖
+$('#open_url_new_tab_jsp').click(() => {
+	chrome.tabs.create({ url: 'http://jspang.com/' });
+});
+
+// 新标签打开echarts
+$('#open_url_new_tab_echarts').click(() => {
+	chrome.tabs.create({ url: 'https://echarts.apache.org/zh/index.html/' });
+});
+
+// 新标签打开antv
+$('#open_url_new_tab_antv').click(() => {
+	chrome.tabs.create({ url: 'https://antv.vision/zh/' });
+});
+
+// 新标签打开mdn
+$('#open_url_new_tab_mdn').click(() => {
+	chrome.tabs.create({ url: 'https://developer.mozilla.org/zh-CN/docs/Web' });
+});
+
+// 新标签打开Stack Overflow
+$('#open_url_new_tab_stack').click(() => {
+	chrome.tabs.create({ url: 'https://stackoverflow.com/' });
+});
+
+// 新标签打开github
+$('#open_url_new_tab_github').click(() => {
+	chrome.tabs.create({ url: 'https://github.com/' });
+});
+
+// 新标签打开segmentfault
+$('#open_url_new_tab_segment').click(() => {
+	chrome.tabs.create({ url: 'https://segmentfault.com/' });
+});
+
+// 新标签打开语雀
+$('#open_url_new_tab_yuque').click(() => {
+	chrome.tabs.create({ url: 'https://www.yuque.com/' });
+});
+
 // 新标签打开所有搜图网站
 $('#open_url_new_tab_search_img').click(() => {
 	chrome.tabs.create({ url: 'https://www.google.com/imghp?hl=zh-CN' }); // 谷歌识图
