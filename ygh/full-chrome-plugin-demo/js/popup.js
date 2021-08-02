@@ -126,6 +126,26 @@ $('#open_url_new_tab_yuque').click(() => {
 	chrome.tabs.create({ url: 'https://www.yuque.com/' });
 });
 
+// 新标签打开xvideos
+$('#open_url_new_tab_xv').click(() => {
+	chrome.tabs.create({ url: 'https://www.xvideos.com/' });
+});
+
+// 新标签打开pornhub
+$('#open_url_new_tab_pornhub').click(() => {
+	chrome.tabs.create({ url: 'https://cn.pornhub.com/' });
+});
+
+// 新标签打开javlibarary
+$('#open_url_new_tab_javlib').click(() => {
+	chrome.tabs.create({ url: 'http://www.javlibrary.com/cn/' });
+});
+
+// 新标签打开theporndude
+$('#open_url_new_tab_mulu').click(() => {
+	chrome.tabs.create({ url: 'https://theporndude.com/zh' });
+});
+
 // 新标签打开所有搜图网站
 $('#open_url_new_tab_search_img').click(() => {
 	chrome.tabs.create({ url: 'https://www.google.com/imghp?hl=zh-CN' }); // 谷歌识图
