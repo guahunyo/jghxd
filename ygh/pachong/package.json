@@ -1,13 +1,21 @@
-  
-{
-    "name": "micro-scraper",
-    "version": "0.0.1",
-    "private": true,
+  {
+    "name": "crawler",
+    "version": "1.0.0",
+    "description": "av爬虫",
+    "main": "./src/index.js",
     "scripts": {
-      "start": "node app.js"
+      "dev": "node ./src/index.js"
     },
+    "keywords": [
+      "爬虫",
+      "nodejs爬虫"
+    ],
+    "author": "guahunyo",
     "dependencies": {
-      "request": "*",
-      "cheerio": "*"
+      "async": "^3.2.0",
+      "chalk": "^4.1.0",
+      "cheerio": "^1.0.0-rc.3",
+      "superagent": "^6.1.0",
+      "superagent-proxy": "^2.0.0"
     }
   }
